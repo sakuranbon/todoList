@@ -36,7 +36,7 @@ class MyHomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final List<ToDo> todoList = ref.watch(todosProvider);
-    final todos =ref.watch(todosProvider);
+
 
 
     return Scaffold(

@@ -12,7 +12,7 @@ class ToDo {
   final String description;
   final bool isCompleted;
 
-  ToDo copywith({int? id, String? description, bool? isCompleted}) {
+  ToDo copyWith({int? id, String? description, bool? isCompleted}) {
     return ToDo(
       id: id ?? this.id,
       description: description ?? this.description,

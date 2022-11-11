@@ -29,7 +29,7 @@ class TodosNotifier extends StateNotifier<List<ToDo>> {
     List<ToDo> newState =[];
     for(final todo in state){
       if(todo.id == id){
-        newState.add(todo.copywith(isCompleted: !todo.isCompleted));
+        newState.add(todo.copyWith(isCompleted: !todo.isCompleted));
       }else{
         newState.add(todo);
       }
@@ -41,7 +41,7 @@ class TodosNotifier extends StateNotifier<List<ToDo>> {
     List<ToDo> newState = [];
     for (final todo in state) {
       if (todo.id == id) {
-        newState.add(todo.copywith(description: description));
+        newState.add(todo.copyWith(description: description));
       } else {
         newState.add(todo);
       }
